@@ -5,7 +5,6 @@ var html = preHtml+document.getElementById(element).innerHTML+postHtml;
 
 
 
-
 var blob = new Blob(['\ufeff', html], {
   type: 'application/msword'
 });
@@ -35,4 +34,8 @@ if(navigator.msSaveOrOpenBlob ){
 }
 
 document.body.removeChild(downloadLink);
+}
+
+function storeData(dataEvenimentului){
+  localStorage.setItem('Data',dataEvenimentului);
 }
