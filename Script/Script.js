@@ -36,6 +36,7 @@ if(navigator.msSaveOrOpenBlob ){
 document.body.removeChild(downloadLink);
 }
 
-function storeData(dataEvenimentului){
+function storeData(dataEvenimentului,serviciu){
   localStorage.setItem('Data',dataEvenimentului);
+  localStorage.setItem('Serviciu',serviciu);
 }

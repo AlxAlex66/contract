@@ -9,43 +9,55 @@
   <div id="exportContent">
 
     <h1 style="color:red"> FISA EVENIMENT </h1>
-    <div>
-    <div class="data_eveniment">
-        Data Evenimentului: 
-        <p id="dataEvenimentului">
-        <script>
-        document.getElementById("dataEvenimentului").innerHTML =  localStorage.getItem('Data');
-          </script>
-          </p>
-      </div>
+
+
+
+
+
+
+
+
+
+          <div>
+          <b style="font-size:1.2rem">Data Eveniment:</b>
+          <span id="dataEvenimentului">
+          <script>
+          document.getElementById("dataEvenimentului").innerHTML =  localStorage.getItem('Data');
+            </script>
+          </span>
+        </div>
+
+
+
+          <div>
+          <b style="font-size:1.2rem">Serviciu:</b>
+          <span id="serviciu">
+          <script>
+          document.getElementById("serviciu").innerHTML =  localStorage.getItem('Serviciu');
+            </script>
+          </span>
+        </div>
+
+
+
+
+
+
+
     </div>
 
 
   <div >
 
   <button onclick="fisa();">Creare Fisa</button>
-  <button onclick="Export2Word('exportContent', 'Contract');">Export Fisier .doc</button>
+  <button onclick="Export2Word('exportContent', localStorage.getItem('Data'));">Export Fisa fisa eveniment.doc</button>
   <button onclick="Export2Word('exportContent', 'word-content.docx');">Export Fisier .docx</button>
 
   </div>
 
 
- <div id="result">
-
- </div>
   <script src="Script/Script.js"></script>
 
-  <script>
-    const resultList = document.getElementById('result')
-    new URLSearchParams(window.location.search).forEach((value,
-      name) =>
-    {
-      resultList.append(`${name}: ${value}`)
-      resultList.append(document.createElement('br'))
-    })
-
-
-  </script>
     </body>
 
 </html>

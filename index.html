@@ -14,14 +14,28 @@
 
 <form action="result.html" method="GET">
 
-  <div >
+  <div style="margin:20px">
+    <label for="name">Data Eveniment:</label>
+    <input id="dataEvenimentului">
+  </div>
+  <div style="margin:20px">
+    <label for="name">Serviciu:</label>
+    <input id="serviciu">
+  </div>
+  <div style="margin:20px">
+    <label for="name">Data Eveniment:</label>
+    <input id="dataEvenimentului">
+  </div>
+  <div style="margin:20px">
     <label for="name">Data Eveniment:</label>
     <input id="dataEvenimentului">
   </div>
 
-<button type="submit">Creare fisa</button>
+<button style="margin:50px;" type="submit" onclick="storeData(document.getElementById('dataEvenimentului').value,
+                                                              document.getElementById('serviciu').value)
+
+                                                              ">Creare fisa</button>
 </form>
-<button onclick="storeData(document.getElementById('dataEvenimentului').value)">Memorare Date In Local Storage</button>
 
 
 <!--
@@ -70,13 +84,6 @@
 
 
 
-<div class="">
-
-
-<button onclick="Export2Word('exportContent', 'Contract');">Export Fisier .doc</button>
-<button onclick="Export2Word('exportContent', 'word-content.docx');">Export Fisier .docx</button>
-
-</div>
 
 
 
