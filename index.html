@@ -11,7 +11,7 @@
 
   </head>
   <body>
-
+    <h1>Creare fisa de eveniment </h1>
 <form action="result.html" method="GET">
 
   <div style="margin:20px">
@@ -23,13 +23,67 @@
     <input id="serviciu">
   </div>
   <div style="margin:20px">
-    <label for="name">Data Eveniment:</label>
+    <label for="name">Pachet:</label>
+    <input id="dataEvenimentului">
+    <button  onclick="storeData(Premiun)">Premiun</button>
+  </div>
+  <div style="margin:20px">
+    <label for="name">Echipa:</label>
     <input id="dataEvenimentului">
   </div>
   <div style="margin:20px">
-    <label for="name">Data Eveniment:</label>
+    <label for="name">De unde a intrat evenimentul:</label>
     <input id="dataEvenimentului">
   </div>
+
+  <div style="margin-top:20px;margin-left:20px">
+    Telefon
+
+  <div>
+    <label for="name">Sot:</label>
+    <input id="dataEvenimentului">
+  </div>
+  <div style="margin-bottom:20px">
+    <label for="name">Sotie:</label>
+    <input id="dataEvenimentului">
+  </div>
+
+  </div>
+
+<div class="">
+  Plata:
+
+  <div style="margin:20px">
+    <label for="name">Valoare contract:</label>
+    <input id="dataEvenimentului">
+  </div>
+  <div style="margin:20px">
+    <label for="name">Avans:</label>
+    <input id="dataEvenimentului">
+  </div>
+  <div style="margin:20px">
+    <label for="name">Rest de plata:</label>
+    <input id="dataEvenimentului">
+  </div>
+</div>
+
+<div style="margin:20px">
+  <label for="name">Materiale:</label>
+  <input id="dataEvenimentului">
+</div>
+
+
+<div style="margin:20px">
+  <label for="name">Extraoptiuni:</label>
+  <textarea name="name" rows="8" cols="80"></textarea>
+
+</div>
+<div style="margin:20px">
+  <label for="name">Alte detalii:</label>
+  <textarea name="name" rows="8" cols="80"></textarea>
+</div>
+
+
 
 <button style="margin:50px;" type="submit" onclick="storeData(document.getElementById('dataEvenimentului').value,
                                                               document.getElementById('serviciu').value)
