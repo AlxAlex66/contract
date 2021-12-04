@@ -1,65 +1,15 @@
 function Export2Doc(element, filename = '') {
-  //  _html_ will be replace with custom html
-  var meta= "Mime-Version: 1.0\nContent-Base: " + location.href + "\nContent-Type: Multipart/related; boundary=\"NEXT.ITEM-BOUNDARY\";type=\"text/html\"\n\n--NEXT.ITEM-BOUNDARY\nContent-Type: text/html; charset=\"utf-8\"\nContent-Location: " + location.href + "\n\n<!DOCTYPE html>\n<html>\n_html_</html>";
-  //  _styles_ will be replaced with custome css
-  var head= "<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n<style>\n_styles_\n</style>\n</head>\n";
 
-  var html = document.getElementById(element).innerHTML ;
-  
+  var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+  var postHtml = "</body></html>";
+
+  var html = preHtml + document.getElementById(element).innerHTML + postHtml;
+
   var blob = new Blob(['\ufeff', html], {
       type: 'application/msword'
   });
-  
-  var  css = (
-         '<style>' +
-         'img {width:300px;}table {border-collapse: collapse; border-spacing: 0;}td{padding: 6px;}' +
-         '</style>'
-        );
-//  Image Area %%%%
-  var options = { maxWidth: 624};
-  var images = Array();
-  var img  = [].slice.apply(document.getElementsByTagName('img'), null)
-  for (var i = 0; i < img.length; i++) {
-      // Calculate dimensions of output image
-      var w = Math.min(img[i].width, options.maxWidth);
-      var h = img[i].height * (w / img[i].width);
-      // Create canvas for converting image to data URL
-      var canvas = document.createElement("CANVAS");
-      canvas.width = w;
-      canvas.height = h;
-      // Draw image to canvas
-      var context = canvas.getContext('2d');
-      context.drawImage(img[i], 0, 0, w, h);
-      // Get data URL encoding of image
-      var uri = canvas.toDataURL("image/png");
-      $(img[i]).attr("src", img[i].src);
-      img[i].width = w;
-      img[i].height = h;
-      // Save encoded image to array
-      images[i] = {
-          type: uri.substring(uri.indexOf(":") + 1, uri.indexOf(";")),
-          encoding: uri.substring(uri.indexOf(";") + 1, uri.indexOf(",")),
-          location: $(img[i]).attr("src"),
-          data: uri.substring(uri.indexOf(",") + 1)
-      };
-  }
 
-  // Prepare bottom of mhtml file with image data
-  var imgMetaData = "\n";
-  for (var i = 0; i < images.length; i++) {
-      imgMetaData += "--NEXT.ITEM-BOUNDARY\n";
-      imgMetaData += "Content-Location: " + images[i].location + "\n";
-      imgMetaData += "Content-Type: " + images[i].type + "\n";
-      imgMetaData += "Content-Transfer-Encoding: " + images[i].encoding + "\n\n";
-      imgMetaData += images[i].data + "\n\n";
-      
-  }
-  imgMetaData += "--NEXT.ITEM-BOUNDARY--";
-// end Image Area %%
-
-   var output = meta.replace("_html_", head.replace("_styles_", css) +  html) + imgMetaData;
-
-  var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(output);
+  var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
 
 
   filename = filename ? filename + '.doc' : 'document.doc';
@@ -81,8 +31,6 @@ function Export2Doc(element, filename = '') {
   document.body.removeChild(downloadLink);
   window.localStorage.clear();
 }
- 
-
 
 function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delux,alex,razvan,sebi,monea,mihai,dodo,cristi_duta,madalin,coco,online,recomandare,nume_sot,telefon_sot,nume_sotie,telefon_sotie,oras,local,nr_invitati,nr_contract,s_civila,x40,x30,x25,x20,x12,val_contract,m1,avans,m2,rest_plata,m3,extraoptiuni,alte_detalii,img){
   //Setare data eveniment
