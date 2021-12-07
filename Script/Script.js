@@ -32,7 +32,7 @@ function Export2Doc(element, filename = '') {
   window.localStorage.clear();
 }
 
-function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delux,alex,razvan,sebi,monea,mihai,dodo,cristi_duta,madalin,coco,online,recomandare,nume_sot,telefon_sot,nume_sotie,telefon_sotie,oras,local,nr_invitati,nr_contract,s_civila,x40,x30,x25,x20,x12,val_contract,m1,avans,m2,rest_plata,m3,extraoptiuni,alte_detalii,stick,personalizata,simpla){
+function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delux,alex,razvan,sebi,monea,mihai,dodo,cristi_duta,madalin,coco,online,recomandare,nume_sot,telefon_sot,nume_sotie,telefon_sotie,oras,local,nr_invitati,nr_contract,s_civila,x40,x30,x25,x20,x12,val_contract,m1,avans,m2,rest_plata,m3,extraoptiuni,alte_detalii,stick,personalizata,simpla,nunta,botez,civila){
   //Setare data eveniment
 
   var x = dataEvenimentului.split('-');
@@ -288,7 +288,22 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
      }
 
 
-    
+    // Creare nume contract
+    if(nunta==true){
+  
+      localStorage.setItem('nume_cr','NUNTA');
+      }
+      else if(botez==true)
+      {
+        
+        localStorage.setItem('nume_cr','BOTEZ');
+      }
+      else if(civila==true)
+      {
+        localStorage.setItem('nume_cr','CIVILA');
+      }
+    var nume_contr=t+'-'+localStorage.getItem("nume_cr")+'-'+localStorage.getItem("Serviciu")+'-'+localStorage.getItem("Oras");
+    localStorage.setItem('Nume_contract',nume_contr);
 
 
 
@@ -297,7 +312,7 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
     
     
   
-  alert(personalizata);
+  
 }
 
 
