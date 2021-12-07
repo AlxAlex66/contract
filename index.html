@@ -10,24 +10,27 @@
 
 
   </head>
-  <body>
+  <body class="corp">
     <h1 style="text-align: center;">Creare fisa de eveniment </h1>
 <form action="result.html" method="GET">
 
  
- <div>
-  <label for="start" >Data Eveniment:</label>
+ <div class="data_eveniment" >
+   <div style="margin:20px">
+  <label for="start" style="color:rgb(226, 0, 0); font-weight: bold;">Data Eveniment:</label>
 
   <input  type="date" id="start" name="trip-start"  >
- </div>
+</div>
+ 
 
    <div style="margin:20px">
-    <label for="name">Serviciu:</label>
+    <label for="name"style="color:rgb(226, 0, 0); font-weight: bold;">Serviciu:</label>
     
     <span>
-      <input type="checkbox" id="Foto-Video" name="Foto-Video">
+      <input style="font-size: 2px;" type="checkbox" id="Foto-Video" name="Foto-Video">
       <label for="Foto-Video">Foto-Video</label>
     </span>
+    
 
 
     <span>
@@ -43,7 +46,7 @@
 
   </div>
   <div style="margin:20px">
-    <label for="name">Pachet:</label>
+    <label for="name"style="color:rgb(226, 0, 0); font-weight: bold;">Pachet:</label>
     
     <span>
       <input type="checkbox" id="Standard" name="Standard">
@@ -61,16 +64,18 @@
    
     
   </div>
+</div>
+<br>
 
-  <div style="margin:20px">
-    <label for="name">Echipa:</label>
+  <div class="echipa">
+    <label for="name" style="color:red;;font-weight: bold;">Echipa</label>
    
 <div>
-  Foto
+ <span style="font-weight: bold;text-align:left;">Foto:&nbsp;&nbsp;</span> 
     <span>
       <input type="checkbox" id="Alex" name="Alex">
       <label for="Alex">Alex</label>
-    </span>
+    </span>&nbsp;
     
     <span>
       <input type="checkbox" id="Razvan" name="Razvan">
@@ -78,7 +83,7 @@
     </span>
     <span>
       <input type="checkbox" id="Sebi" name="Sebi">
-      <label for="Sebi">Sebi</label>
+      <label for="Sebi">Sebastian</label>&nbsp;&nbsp;
     </span>
     <span>
       <input type="checkbox" id="Monea" name="Monea">
@@ -86,7 +91,7 @@
     </span>
   </div>
   <div>
-    Video
+    <span style="font-weight: bold;text-align:left;">Video:</span> 
       <span>
         <input type="checkbox" id="Mihai" name="Mihai">
         <label for="Mihai">Mihai</label>
@@ -94,7 +99,7 @@
       
       <span>
         <input type="checkbox" id="Dodo" name="Dodo">
-        <label for="Dodo">Dodo</label>
+        <label for="Dodo">Dodo</label>&nbsp;&nbsp;&nbsp;
       </span>
       <span>
         <input type="checkbox" id="Cristi Duta" name="Cristi Duta">
@@ -109,10 +114,11 @@
         <label for="Coco">Coco</label>
       </span>
     </div>
-
+    
   </div>
-  <div style="margin:20px">
-    <label for="name">De unde a intrat evenimentul:</label>
+  <br>
+  <div class="echipa" >
+    <label for="name"style="font-weight:bold">De unde a intrat evenimentul:</label>
     
     <span>
       <input type="checkbox" id="Online" name="Online">
@@ -123,12 +129,13 @@
       <label for="Recomandare">Recomandare</label>
     </span>
   </div>
-
-  <div style="margin-top:20px;margin-left:20px">
-    Date de Contact Client:
+<br>
+  <div class="echipa">
+    
+    <label for="name" style="color:red;;font-weight: bold;">Date de Contact Client:</label>
 
   <div>
-    <label for="name">Sot:</label>
+    <label for="name">Sot:</label>&nbsp;&nbsp;
     <input id="Nume_sot">
     <span>
       Tel
@@ -149,10 +156,11 @@
   </div>
 
 
-  
+  <br>
 
-  Detalii Contract:
-<div>
+  
+<div class="echipa">
+  <label for="name" style="color:red;;font-weight: bold;">Detalii Contract:</label>
   <div style="margin:20px">
     <label for="name">Oras:</label>
     <input id="Oras">
@@ -191,11 +199,11 @@
 
 
 
+<br>
 
+<div class="echipa">
+  <label for="name" style="color:red;;font-weight: bold;">Materiale:</label>
 
-<div style="margin:20px">
-  <label for="name">Materiale:</label>
-</div>
   
   <div>
     Fotobook 40X30
@@ -247,7 +255,11 @@
           <option value="8">8</option>
           <option value="9">9</option>
           <option value="10">10</option>
-      </select>
+      </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="echipa1">
+        <input type="checkbox" id="Printuri" name="Printuri">
+        <label for="Printuri">Printuri </label>
+      </span>
       </div>
 
         <div>
@@ -264,7 +276,9 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
+            
         </select>
+      
         </div>
         
 
@@ -285,23 +299,53 @@
               <option value="10">10</option>
           </select>
           </div>
-          <div>
 
-            <div>
-              <input type="checkbox" id="Printuri" name="Printuri">
-              <label for="Printuri">Printuri </label>
-            </div>
-    
+<br>
+          <div>
+            Cutiuta de stick
+            <select id="Stick">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select>
+          
+
+          <span><input type="checkbox" id="Personalizata" name="Personalizata">
+                <label for="Personalizata">Personalizata </label></span>
+
+
+                <span><input type="checkbox" id="Simpla" name="Simpla">
+                  <label for="Simpla">Simpla </label></span>
           </div>
 
+<!--
+          <div style="position: relative;">
+
+            <span>
+              <input type="checkbox" id="Printuri" name="Printuri">
+              <label for="Printuri">Printuri </label>
+            </span>
+    
+          </div>
+          -->
 
 
+        </div>
+<br>
 
-
-          Plata:
-
-  <div style="margin:20px">
-    <label for="name">Valoare contract:</label>
+          
+<div class="echipa">
+  <label for="name" style="color:red;;font-weight: bold;">Plata:</label>
+  <div style="margin:20px" >
+    <label for="name">Valoare contract:</label> &nbsp;
     <input id="Valoare_contract">
     <span>
       <select id="M1">
@@ -311,7 +355,7 @@
     </span>
   </div>
   <div style="margin:20px">
-    <label for="name">Avans:</label>
+    <label for="name">Avans:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id="Avans">
     <span>
       <select id="M2">
@@ -320,7 +364,7 @@
     </select>
   </div>
   <div style="margin:20px">
-    <label for="name">Rest de plata:</label>
+    <label for="name">Rest de plata:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id="Rest_plata">
     <span>
       <select id="M3">
@@ -328,29 +372,34 @@
         <option value="Lei">Lei</option>
     </select>
   </div>
+</div>
 
 
 
-
-<div style="margin:20px">
-  <label for="name">Extraoptiuni:</label>
+<div class="echipa1">
+  <label for="name" style="color:red;;font-weight: bold;">Extraoptiuni:</label>
+  <br>
   <textarea id="Extraoptiuni" name="name" rows="8" cols="80"></textarea>
 </div>
 
-<div style="margin:20px">
-  <label for="name">Alte Detalii:</label>
+<div class="echipa1">
+  
+  <label for="name" style="color:red;;font-weight: bold;">Alte Detalii:</label>
+  <br>
   <textarea id="Alte_detalii" name="name" rows="8" cols="80"></textarea>
 </div>
 
+
+<!--
 <div>  <label for="img">Adaugare Contract Format Fizic:</label>
   <input type="file" id="img" name="img" accept="image/*">
 </div>
 
+-->
 
 
-
-
-<button style="margin:50px;" type="submit" onclick="storeData(document.getElementById('start').value,
+<div style="margin:30px; margin-left:50px;margin-right:50px; ">
+<button class="buton" style="margin:auto;width: 100%;font-size: 30px; " type="submit" onclick="storeData(document.getElementById('start').value,
                                                               document.getElementById('Foto-Video').checked,
                                                               document.getElementById('Foto').checked,
                                                               document.getElementById('Video').checked,
@@ -390,7 +439,9 @@
                                                               document.getElementById('M3').value,
                                                               document.getElementById('Extraoptiuni').value,
                                                               document.getElementById('Alte_detalii').value,
-                                                              document.getElementById('img'),
+                                                              document.getElementById('Stick').value,
+                                                              document.getElementById('Personalizata').checked,
+                                                              document.getElementById('Simpla').checked,
 
                                                               
                                                               
@@ -398,7 +449,7 @@
 
                                                               )">Creare fisa</button>
 </form>
-
+</div>
 
 
 

@@ -32,7 +32,7 @@ function Export2Doc(element, filename = '') {
   window.localStorage.clear();
 }
 
-function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delux,alex,razvan,sebi,monea,mihai,dodo,cristi_duta,madalin,coco,online,recomandare,nume_sot,telefon_sot,nume_sotie,telefon_sotie,oras,local,nr_invitati,nr_contract,s_civila,x40,x30,x25,x20,x12,val_contract,m1,avans,m2,rest_plata,m3,extraoptiuni,alte_detalii,img){
+function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delux,alex,razvan,sebi,monea,mihai,dodo,cristi_duta,madalin,coco,online,recomandare,nume_sot,telefon_sot,nume_sotie,telefon_sotie,oras,local,nr_invitati,nr_contract,s_civila,x40,x30,x25,x20,x12,val_contract,m1,avans,m2,rest_plata,m3,extraoptiuni,alte_detalii,stick,personalizata,simpla){
   //Setare data eveniment
 
   var x = dataEvenimentului.split('-');
@@ -59,15 +59,18 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
   if(standard==true){
   
     localStorage.setItem('Pachet','Standard');
+    localStorage.setItem('Printuri','- Printuri: 50/15X21;   7/20X30;   3/45X30.');
     }
     else if(premiun==true)
     {
       
       localStorage.setItem('Pachet','Premium');
+      localStorage.setItem('Printuri','- Printuri: 50/15X21;   7/20X30;   3/45X30.');
     }
     else if(delux==true)
     {
       localStorage.setItem('Pachet','Delux');
+      localStorage.setItem('Printuri','- Printuri: 70/15X21;   10/20X30;  5/45X30.');
     }
 
 
@@ -76,7 +79,7 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
 
     if(alex==true){
   
-      localStorage.setItem('Alex','Alex');
+      localStorage.setItem('Alex',' Alex');
     }
     if(razvan==true){
   
@@ -97,17 +100,18 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
     }
     if(localStorage.getItem('Razvan')!=null)
     {
-      echiapa_foto=echiapa_foto+" "+localStorage.getItem('Razvan');
+      echiapa_foto=echiapa_foto+"+"+localStorage.getItem('Razvan');
     }
     if(localStorage.getItem('Sebi')!=null)
     {
-      echiapa_foto= echiapa_foto+" "+localStorage.getItem('Sebi');
+      echiapa_foto= echiapa_foto+"+"+localStorage.getItem('Sebi');
     }
     if(localStorage.getItem('Monea')!=null)
     {
-      echiapa_foto= echiapa_foto+" "+localStorage.getItem('Monea');
+      echiapa_foto= echiapa_foto+"+"+localStorage.getItem('Monea');
     }
-    
+  
+    echiapa_foto =echiapa_foto.substring(1);
     localStorage.setItem('Echipa-Foto',echiapa_foto);
 
 
@@ -115,7 +119,7 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
 
     if(mihai==true){
   
-      localStorage.setItem('Mihai','Mihai');
+      localStorage.setItem('Mihai',' Mihai');
     }
     if(dodo==true){
   
@@ -140,21 +144,23 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
     }
     if(localStorage.getItem('Dodo')!=null)
     {
-      echiapa_video=echiapa_video+" "+localStorage.getItem('Dodo');
+      echiapa_video=echiapa_video+"+"+localStorage.getItem('Dodo');
     }
     if(localStorage.getItem('Cristi Duta')!=null)
     {
-      echiapa_video= echiapa_video+" "+localStorage.getItem('Cristi Duta');
+      echiapa_video= echiapa_video+"+"+localStorage.getItem('Cristi Duta');
     }
     if(localStorage.getItem('Madalin')!=null)
     {
-      echiapa_video= echiapa_video+" "+localStorage.getItem('Madalin');
+      echiapa_video= echiapa_video+"+"+localStorage.getItem('Madalin');
     }
     if(localStorage.getItem('Coco')!=null)
     {
-      echiapa_video= echiapa_video+" "+localStorage.getItem('Coco');
+      echiapa_video= echiapa_video+"+"+localStorage.getItem('Coco');
     }
     
+   
+    echiapa_video =echiapa_video.substring(1);
     localStorage.setItem('Echipa-Video',echiapa_video);
 
 
@@ -267,12 +273,31 @@ function storeData(dataEvenimentului,foto,video,foto_video,standard,premiun,delu
 
 
 
-    // Adaugare imagini contract fizic
+    // Cutiuta de stick
+
+      cutie3 ="- "+stick+" Buc. ";
+    localStorage.setItem('Cutie',cutie3);
+     if(personalizata==true)
+     {
+       var cutie1= cutie3 +"Cutie Personalizata.";
+       localStorage.setItem('Cutie',cutie1);
+     }else if(simpla==true)
+     {
+      var cutie2=cutie3+ "Cutie Simpla.";
+      localStorage.setItem('Cutie',cutie2);
+     }
+
+
+    
+
+
+
+    
 
     
     
   
-  alert(b64);
+  alert(personalizata);
 }
 
 

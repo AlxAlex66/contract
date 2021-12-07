@@ -1,0 +1,57 @@
+.button2 {
+    background-color: #eaf394;
+    transition-duration: 0.4s;
+  }
+  
+  .button2:hover {
+    cursor: pointer;
+    background-color: #5ddf61; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .buton {
+    background-color: #eaf394;
+    transition-duration: 0.4s;
+  }
+  
+  .buton:hover {
+    cursor: pointer;
+    background-color: #5ddf61; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .corp {
+      font-size: large;
+    background-color: #f1f1d8;
+
+  }
+  .data_eveniment {
+      text-align: center;
+      margin:auto;
+      border: 2px solid;
+      width: fit-content;
+      block-size: fit-content;
+      
+  }
+  .echipa {
+    
+    margin:auto;
+    padding: 20px;
+    border: 2px solid;
+    width: fit-content;
+    block-size: fit-content;
+    
+}
+.echipa1 {
+    
+  margin:auto;
+  padding: 20px;
+  width: fit-content;
+  block-size: fit-content;
+  
+}
+
+
+
+  

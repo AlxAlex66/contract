@@ -9,89 +9,414 @@
 
   <div id="exportContent">
 
-    <h1 style="color:rgb(226, 0, 0);font-size:220%; text-align: center"> FISA EVENIMENT </h1>
+    <h1 style="color:rgb(226, 0, 0);font-size:180%; text-align: center"> FISA EVENIMENT </h1>
+
+
+
+
+
+
+<table style="border-collapse:collapse;border:none;margin: auto;">
+  <tbody>
+      <tr>
+          <td style="width: 239.4pt;border: 1pt solid windowtext;border-top: 3pt solid windowtext;border-left: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:large;">Data Eveniment:</b></p>
+          </td>
+          <td style="width: 239.4pt;border-top: 3pt solid windowtext;border-right: 3pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="dataEvenimentului"style="font-size: large;font-weight: bold;">
+                <script>
+                document.getElementById("dataEvenimentului").innerHTML =  localStorage.getItem('Data');
+                  </script>
+                </span></p>
+          </td>
+      </tr>
+      <tr>
+          <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font: size 30px;font-family:"Calibri",sans-serif;'>&nbsp;<span style="color:red;"><b style="color: red;font-size:large;">Serviciu:</b></span></p>
+          </td>
+          <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="serviciu" style="font-size: large;font-weight: bold;">
+                <script>
+                document.getElementById("serviciu").innerHTML =  localStorage.getItem('Serviciu');
+                  </script>
+                </span></p>
+          </td>
+      </tr>
+      <tr>
+          <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:large;">Pachet:</b></p>
+          </td>
+          <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="pachet"style="font-size: large;font-weight: bold;">
+                <script>
+                  document.getElementById("pachet").innerHTML =  localStorage.getItem('Pachet');
+                    </script>
+              </span></p>
+          </td>
+      </tr>
+      <tr>
+          <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 3pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:large;">Sursa Eveniment:</b></p>
+          </td>
+          <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 3pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+              <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="intrare"style="font-size: large;font-weight: bold;">
+                <script>
+                  document.getElementById("intrare").innerHTML =  localStorage.getItem('Intrare');
+                    </script>
+              </span></p>
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+      <div style="font-size:medium;text-decoration: underline;"><h2>Echipa</h2></div>
+      
+
+      <table style="border-collapse:collapse;border:none;margin: auto;">
+        <tbody>
+            <tr>
+                <td style="width: 239.4pt;border: 1pt solid windowtext;border-top: 3pt solid windowtext;border-left: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Foto:</b></p>
+                </td>
+                <td style="width: 239.4pt;border-top: 3pt solid windowtext;border-right: 3pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="echipa"style="font-size:medium;">
+          
+                      <script>
+                         document.getElementById("echipa").innerHTML =  localStorage.getItem('Echipa-Foto');
+                      </script>
+                </span></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 3pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Video:</b></p>
+                </td>
+                <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 3pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="echipav"style="font-size:medium;" >
+         
+                      <script>
+                        document.getElementById("echipav").innerHTML =  localStorage.getItem('Echipa-Video');
+                      </script>
+                      
+               </span></p>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="font-size:medium;text-decoration: underline;"><h2>Date de Contact Client</h2></div>
+
+
+
+
+
+
+        <table style="border-collapse:collapse;border:none;margin: auto;">
+          <tbody>
+              <tr>
+                  <td style="width: 90.9pt;border-width: 3pt 1pt 1pt 3pt;border-color: windowtext;border-style: solid;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><b style="color: red;">Nume Sot:</b></p>
+                  </td>
+                  <td style="width: 225pt;border-top: 3pt solid windowtext;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><span id="nume_sot">
+                        <script>
+                          document.getElementById("nume_sot").innerHTML =  localStorage.getItem('Nume_sot');
+                            </script>
+                      </span></p>
+                  </td>
+                  <td style="width: 27pt;border-top: 3pt solid windowtext;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><strong style="color: red;">Tel:</strong></p>
+                  </td>
+                  <td style="width: 135.9pt;border-top: 3pt solid windowtext;border-left: none;border-bottom: 1pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><a href="tel:"><span id="tel_sot">
+                        <script>
+                          document.getElementById("tel_sot").innerHTML =  localStorage.getItem('Telefon_sot');
+                            </script>
+                      </span></a></p>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="width: 90.9pt;border-top: none;border-left: 3pt solid windowtext;border-bottom: 3pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><strong style="color: red;">Nume Sotie:</strong></p>
+                  </td>
+                  <td style="width: 225pt;border-top: none;border-left: none;border-bottom: 3pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><span id="nume_sotie">
+                        <script>
+                          document.getElementById("nume_sotie").innerHTML =  localStorage.getItem('Nume_sotie');
+                            </script>
+                      </span ></p>
+                  </td>
+                  <td style="width: 27pt;border-top: none;border-left: none;border-bottom: 3pt solid windowtext;border-right: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><strong style="color: red;">Tel:</strong></p>
+                  </td>
+                  <td style="width: 135.9pt;border-top: none;border-left: none;border-bottom: 3pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:medium;font-family:"Calibri",sans-serif;'><a href="tel:"><span id="tel_sotie">
+                        <script>
+                          document.getElementById("tel_sotie").innerHTML =  localStorage.getItem('Telefon_sotie');
+                            </script>
+                      </span></a></p>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+
+        <div style="font-size:medium;text-decoration: underline;"><h2>Detalii Contract</h2></div>
+
+
+        <table style="border-collapse:collapse;border:none;margin: auto;">
+          <tbody>
+              <tr>
+                  <td style="width: 239.4pt;border: 1pt solid windowtext;border-top: 3pt solid windowtext;border-left: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Oras:</b></p>
+                  </td>
+                  <td style="width: 239.4pt;border-top: 3pt solid windowtext;border-right: 3pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="oras"style="font-size: medium;">
+                        <script>
+                        document.getElementById("oras").innerHTML =  localStorage.getItem('Oras');
+                          </script>
+                        </span></p>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font: size 30px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Local:</b></p>
+                  </td>
+                  <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="local"style="font-size: medium;">
+                        <script>
+                        document.getElementById("local").innerHTML =  localStorage.getItem('Local');
+                          </script>
+                        </span></p>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Numar Invitati:</b></p>
+                  </td>
+                  <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="nr_inv"style="font-size: medium;">
+                        <script>
+                        document.getElementById("nr_inv").innerHTML =  localStorage.getItem('Nr_invitati');
+                          </script>
+                        </span></p>
+                  </td>
+              </tr>
+              <tr>
+                <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Nr Contract:</b></p>
+                </td>
+                <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                    <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="nr_contract"style="font-size: medium;">
+                      <script>
+                      document.getElementById("nr_contract").innerHTML =  localStorage.getItem('Nr_contract');
+                        </script>
+                      </span></p>
+                </td>
+            </tr>
+              <tr>
+                  <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 3pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;"><b style="color: red;">Situatie Civila:</b></p>
+                  </td>
+                  <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 3pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="s_civila"style="font-size:medium;">
+                        <script>
+                        document.getElementById("s_civila").innerHTML =  localStorage.getItem('Situatie_civila');
+                          </script>
+                        </span></p>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+          <div style="font-size:medium;text-decoration: underline;"><h2>Materiale</h2></div>
+
+
+
+          <table style="border-collapse:collapse;border:none;margin:auto;font-size:20px;color: rgb(0, 0, 0);">
+            <tbody>
+                <tr>
+                    <td style="width: 6.65in;border: 2pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-family:"Calibri",sans-serif;'> 
+                        
+                        
+                          <span id="40">
+                            <script>
+                              if(localStorage.getItem('40X30')!=0)
+                              {
+                            document.getElementById("40").innerHTML =  localStorage.getItem('40X30');
+                            document.write("<br>");
+                              }
+                              </script>
+                            </span>
+                            
+                        
+              
+                            <span id="30">
+                              <script>
+                                if(localStorage.getItem('30X30')!=0){
+                              document.getElementById("30").innerHTML =  localStorage.getItem('30X30');
+                              document.write("<br>");
+                                }
+                                </script>
+                              </span>
+                              
+              
+                              <span id="25">
+                                <script>
+                                  if(localStorage.getItem('25X25')!=0){
+                                document.getElementById("25").innerHTML =  localStorage.getItem('25X25');
+                                document.write("<br>");
+                                  }
+                                  </script>
+                                </span>
+                                
+              
+                                <span id="20">
+                                  <script>
+                                    if(localStorage.getItem('20X20')!=0){
+                                  document.getElementById("20").innerHTML =  localStorage.getItem('20X20');
+                                  document.write("<br>");
+                                    }
+                                    
+                                    </script>
+                                  </span>
+                                  
+              
+                                
+              
+                                  <span id="12">
+                                    <script>
+                                      if(localStorage.getItem('12X12')!=0){
+                                    document.getElementById("12").innerHTML =  localStorage.getItem('12X12');
+                                    document.write("<br>");
+                                    
+                                      }
+                                      </script>
+                                    </span>
+                                    
+                                    <span id="print">
+                                      <script>
+                                        document.getElementById("print").innerHTML =  localStorage.getItem('Printuri');
+                                      </script>
+                                    </span>
+                                    <br>
+                                    <span id="C_stic">
+                                      <script>
+                                        document.getElementById("C_stic").innerHTML =  localStorage.getItem('Cutie');
+                                      </script>
+                                    </span></p>
+                            
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
+
+
 
 <br>
-
-
-
-
-        <div  style="font-size:200%; font-weight: bold;margin-left: 20px; border:3px rgb(73, 73, 73) solid; ">
-
-
-          <div>
-            
-          <b style="color: red;">Data Eveniment:&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="dataEvenimentului">
-          <script>
-          document.getElementById("dataEvenimentului").innerHTML =  localStorage.getItem('Data');
-            </script>
-          </span>
+          <div style="font-size:medium;text-decoration: underline;"><h2>Plata</h2></div>
           
-        </div>
-        
-        <hr>
-
-
-          <div>
-          <b style="color: red;">Serviciu:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="serviciu">
-          <script>
-          document.getElementById("serviciu").innerHTML =  localStorage.getItem('Serviciu');
-            </script>
-          </span>
-        </div>
-        <hr>
-
-
-        <div>
-          <b style="color: red;">Pachet:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="pachet">
-            <script>
-              document.getElementById("pachet").innerHTML =  localStorage.getItem('Pachet');
-                </script>
-          </span>
-        </div>
-       
-        <hr>
-        <div>
-          <b style="color: red;">Sursa Eveniment:&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="intrare">
-            <script>
-              document.getElementById("intrare").innerHTML =  localStorage.getItem('Intrare');
-                </script>
-          </span>
-          
-        </div>
-       
-          
-
-      </div>
-
-
-      <div style="font-size:medium;text-decoration: underline;"><h1>Echipa</h1></div>
-      <div style="font-weight: bold; margin-left: 20px; border:3px rgb(73, 73, 73) solid; font-size:200%; ">
-        
-        
-          <b style="color: red;">Foto:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-        <span id="echipa">
-          
-              <script>
-                 document.getElementById("echipa").innerHTML =  localStorage.getItem('Echipa-Foto');
-              </script>
-        </span>
-        <br>
-        <b style="color: red;">Video:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-        <span id="echipav" >
-         
-               <script>
-                 document.getElementById("echipav").innerHTML =  localStorage.getItem('Echipa-Video');
-               </script>
+          <table style="border-collapse:collapse;border:none;margin: auto;">
+            <tbody>
+                <tr>
+                    <td style="width: 239.4pt;border: 1pt solid windowtext;border-top: 3pt solid windowtext;border-left: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size: medium;">Valoare Contract:</b></p>
+                    </td>
+                    <td style="width: 239.4pt;border-top: 3pt solid windowtext;border-right: 3pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="v_contract"style="font-size:medium;">
+                          <script>
+                          document.getElementById("v_contract").innerHTML =  localStorage.getItem('Valoare_contr');
+                          document.write("<br>");
+                            </script>
+                          </span></p>
+                    </td>
+                </tr>
                
-        </span>
-        
-        
-      </div>
+                <tr>
+                    <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Avans:</b></p>
+                    </td>
+                    <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="v_avans"style="font-size:medium;">
+                          <script>
+                          document.getElementById("v_avans").innerHTML =  localStorage.getItem('Av');
+                          document.write("<br>");
+                            </script>
+                          </span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 239.4pt;border-right: 1pt solid windowtext;border-bottom: 3pt solid windowtext;border-left: 3pt solid windowtext;border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;<b style="color: red;font-size:medium;">Rest de Plata:</b></p>
+                    </td>
+                    <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 3pt solid windowtext;border-right: 3pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span id="rest_p"style="font-size:medium;">
+                          <script>
+                          document.getElementById("rest_p").innerHTML =  localStorage.getItem('Rest_pl');
+                          
+                            </script>
+                          </span></p>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
 
 
 
@@ -99,265 +424,73 @@
 
 
 
-<div style="font-size:medium;text-decoration: underline;"><h1>Date de Contact Client</h1></div>
 
 
-        <div style=" font-weight: bold;margin-left: 20px; border:3px rgb(73, 73, 73) solid; font-size: 200%; ">
-        <div>
-          <br>
-          <b style="color: red;">Nume Sot:&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="nume_sot">
-            <script>
-              document.getElementById("nume_sot").innerHTML =  localStorage.getItem('Nume_sot');
-                </script>
-          </span>
-          <div >
-          <b style="color: red;">Tel:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="tel_sot">
-            <script>
-              document.getElementById("tel_sot").innerHTML =  localStorage.getItem('Telefon_sot');
-                </script>
-          </span>
-        </div>
-        </div>
-         <hr>
-        <div>
-          <b style="color: red;">Nume Sotie:&ensp;&ensp;&ensp;</b>
-          <span id="nume_sotie">
-            <script>
-              document.getElementById("nume_sotie").innerHTML =  localStorage.getItem('Nume_sotie');
-                </script>
-          </span >
+
+
+          <div style="font-size:medium;text-decoration: underline;"><h2>Extraoptiuni</h2></div>
+
+          <table style="border-collapse:collapse;border:none;margin:auto;font-size:20px;color: rgb(0, 0, 0);">
+            <tbody>
+                <tr>
+                    <td style="width: 6.65in;border: 2pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-family:"Calibri",sans-serif;'>&nbsp;<span id="extra">
+                          <script>
+                            document.getElementById("extra").innerHTML =  localStorage.getItem('Extra_o');
+                            
+                              </script>
+                              </span></p>
+                            
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+          
+
+
+
+
+
           <div>
-          <b style=" color: red;">Tel:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="tel_sotie">
-            <script>
-              document.getElementById("tel_sotie").innerHTML =  localStorage.getItem('Telefon_sotie');
-                </script>
-          </span>
-        </div>
-          
-        </div>
+          <div style="font-size:medium;text-decoration: underline;"><h2>Alte Detalii</h2></div>
+          <table style="border-collapse:collapse;border:none;margin:auto;font-size:20px;color: rgb(0, 0, 0);">
+            <tbody>
+                <tr>
+                    <td style="width: 6.65in;border: 2pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                        <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-family:"Calibri",sans-serif;'>&nbsp;<span id="alt_detalii">
+                          <script>
+                            document.getElementById("alt_detalii").innerHTML =  localStorage.getItem('Alte_D');
+                           
+                            
+                              </script>
+                            </span></p>
+                            
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+        
+
         <br>
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <div style="font-size:medium;text-decoration: underline;"><h1>Detalii Contract</h1></div>
-
-
-
-
-        <div style=" font-weight: bold;margin-left: 20px; border:3px rgb(73, 73, 73) solid; font-size: 200%; ">
-        
-        
-          <b style="color: red;">Oras:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="oras">
-          <script>
-          document.getElementById("oras").innerHTML =  localStorage.getItem('Oras');
-            </script>
-          </span>
-          <hr>
-          <b style="color: red;">Local:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="local">
-          <script>
-          document.getElementById("local").innerHTML =  localStorage.getItem('Local');
-            </script>
-          </span>
-          <hr>
-          <b style="color: red;">Numar Invitati:&ensp;&ensp;&ensp;</b>
-          <span id="nr_inv">
-          <script>
-          document.getElementById("nr_inv").innerHTML =  localStorage.getItem('Nr_invitati');
-            </script>
-          </span>
-          <hr>
-          <b style="color: red;">Nr Contract:&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="nr_contract">
-          <script>
-          document.getElementById("nr_contract").innerHTML =  localStorage.getItem('Nr_contract');
-            </script>
-          </span>
-          <hr>
-          <b style="color: red;">Situatie Civila:&ensp;&ensp;&ensp;</b>
-          <span id="s_civila">
-          <script>
-          document.getElementById("s_civila").innerHTML =  localStorage.getItem('Situatie_civila');
-            </script>
-          </span>
-        
-        
-        
-
-        </div>
-
-        
-          <div style="font-size:medium;text-decoration: underline;"><h1>Materiale</h1></div>
-
-          <div style=" font-weight: bold;margin-left: 20px; border:3px rgb(73, 73, 73) solid; font-size: 200%; ">
-          
-          
-            <span id="40">
-              <script>
-                if(localStorage.getItem('40X30')!=0)
-                {
-              document.getElementById("40").innerHTML =  localStorage.getItem('40X30');
-              document.write("<br>");
-                }
-                </script>
-              </span>
-              
-          
-
-              <span id="30">
-                <script>
-                  if(localStorage.getItem('30X30')!=0){
-                document.getElementById("30").innerHTML =  localStorage.getItem('30X30');
-                document.write("<br>");
-                  }
-                  </script>
-                </span>
-                
-
-                <span id="25">
-                  <script>
-                    if(localStorage.getItem('25X25')!=0){
-                  document.getElementById("25").innerHTML =  localStorage.getItem('25X25');
-                  document.write("<br>");
-                    }
-                    </script>
-                  </span>
-                  
-
-                  <span id="20">
-                    <script>
-                      if(localStorage.getItem('20X20')!=0){
-                    document.getElementById("20").innerHTML =  localStorage.getItem('20X20');
-                    document.write("<br>");
-                      }
-                      
-                      </script>
-                    </span>
-                    
-
-                  
-
-                    <span id="12">
-                      <script>
-                        if(localStorage.getItem('12X12')!=0){
-                      document.getElementById("12").innerHTML =  localStorage.getItem('12X12');
-                      document.write("<br>");
-                        }
-                        </script>
-                      </span>
-                      
-          
-          
-          </div>
-
-
-          <div style="font-size:medium;text-decoration: underline;"><h1>Plata</h1></div>
-          <div style=" font-weight: bold;margin-left: 20px; border:3px rgb(73, 73, 73) solid; font-size: 200%; ">
-            
-            
-            <b style="color: red;">Valoare Contract:&ensp;&ensp;&ensp;</b>
-            <span id="v_contract">
-            <script>
-            document.getElementById("v_contract").innerHTML =  localStorage.getItem('Valoare_contr');
-            document.write("<br>");
-              </script>
-            </span>
-
-            <b style="color: red;">Avans:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-            <span id="v_avans">
-            <script>
-            document.getElementById("v_avans").innerHTML =  localStorage.getItem('Av');
-            document.write("<br>");
-              </script>
-            </span>
-
-            <b style="color: red;">Rest de Plata:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-            <span id="rest_p">
-            <script>
-            document.getElementById("rest_p").innerHTML =  localStorage.getItem('Rest_pl');
-            document.write("<br>");
-              </script>
-            </span>
-          
-          
-          
-          
-          
-          </div>
-
-
-
-          <div style="font-size:medium;text-decoration: underline;"><h1>Extraoptiuni</h1></div>
-          <div style=" font-weight: bold;margin-left: 20px; border:3px rgb(73, 73, 73) solid; font-size: 200%; ">
-          
-          
-          
-            <span id="extra">
-            <script>
-              document.getElementById("extra").innerHTML =  localStorage.getItem('Extra_o');
-              
-                </script>
-                </span>
-          
-          
-          </div>
-
-          
-
-
-
-
-
-          
-          <div style="font-size:medium;text-decoration: underline;"><h1>Alte Detalii</h1></div>
-          <div style=" font-weight: bold;margin-left: 20px; border:3px rgb(73, 73, 73) solid; font-size: 200%; ">
-          
-          
-          
-            <span id="alt_detalii">
-            <script>
-              document.getElementById("alt_detalii").innerHTML =  localStorage.getItem('Alte_D');
-              
-                </script>
-              </span>
-          
-          
-          </div>
-
-
-
-          
-        
-          <b style="color: red;">Pachet:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b>
-          <span id="pachet_imagine">
-            <script>
-
-
-
-                
-
-              
-              
-                </script>
-          </span>
 
 
          
         
+
+
+
+
+
+
+
+
+
         
 
+
+         
 
 
 
@@ -373,12 +506,12 @@
 
   <div >
 
- <div><button onclick="Export2Doc('exportContent', localStorage.getItem('Data'));">Export Fisa fisa eveniment.doc</button></div>
-  
+ <div style="margin: 50px; margin-left: 100px; margin-right: 100px;" ><button class="button2" style="border: 2px solid #000000;border-radius: 5px;text-align: center;color:black;width: 100%;padding: 10px;font-size: 20px;" onclick="Export2Doc('exportContent', localStorage.getItem('Data'))">Export Fisa.doc</button></div>
+  <!--
   <div><button onclick="Export2Doc('exportContent', 'word-content.docx');">Export Fisier .docx</button>
 
   </div>
-
+-->
 
   <script src="Script/Script.js"></script>
 
